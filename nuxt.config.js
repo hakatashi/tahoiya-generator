@@ -29,4 +29,10 @@ module.exports = {
 	plugins: [
 		'@/plugins/element-ui',
 	],
+
+	router: {
+		...(process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+			base: '/tahoiya-generator/',
+		} : {}),
+	},
 };
