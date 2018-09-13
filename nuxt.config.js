@@ -14,15 +14,11 @@ module.exports = {
 	loading: {color: '#3B8070'},
 
 	build: {
-		extend (config, {isDev, isClient}) {
-			if (isDev && isClient) {
-				config.module.rules.push({
-					enforce: 'pre',
-					test: /\.(js|vue)$/,
-					loader: 'eslint-loader',
-					exclude: /(node_modules)/,
-				});
-			}
+		extend (config) {
+			config.module.rules.push({
+				test: /\.bnf$/,
+				loader: 'raw-loader',
+			});
 		},
 	},
 
