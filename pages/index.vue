@@ -97,7 +97,7 @@ export default {
 		};
 	},
 	created() {
-		this.text = erratic.generate(rules, 'list');
+		this.text = erratic.generate(rules, 'comune');
 	},
 };
 </script>

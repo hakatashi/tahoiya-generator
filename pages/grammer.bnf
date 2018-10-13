@@ -1,3 +1,9 @@
-<list>  ::=  "<" <items> ">"               ;
-<items> ::=  <items> " " <item> | <item>   ;
-<item>  ::=  "ほげ" | "ふが" | "ぴよ"      ;
+<comune> ::= "イタリア共和国プッリャ州レッチェ県にある、人口約" <medium-number> "人の基礎自治体" ;
+
+<medium-number> ::= <hundred-number> | <thousand-number> | <ten-thousand-number> ;
+<hundred-number> ::= <nonzero> <digit> "0" ;
+<thousand-number> ::= <nonzero> "," <digit> "0" "0" ;
+<ten-thousand-number> ::= <nonzero> <digit> "," "0" "0" "0" ;
+
+<nonzero> ::= "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+<digit> ::= "0" | <nonzero> ;
