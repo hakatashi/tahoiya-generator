@@ -17,6 +17,7 @@
     "element-ui": "^2.4.8",
     "erratic": "^0.1.0",
     "nuxt": "^2.1.0",
+    "prettybnf": "github:hakatashi/prettybnf",
     "raw-loader": "^0.5.1"
   },
   "devDependencies": {
